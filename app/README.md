@@ -1,0 +1,6 @@
+I build a fully functional to do application. 
+I build my app using Kotlin programming language which is combined a different android architectural component like the navigation, room database, live data, view model, data binding, coroutine, multiply languages like English and Turkish and more. 
+I learned how to follow the principle of a single activity and multiple fragments in my app. 
+I learned how to use a navigation component in my app or to work with a safe args or past data between fragments and created a custom-made transition animation for your destinations. 
+I learned how to build and maintain a database, how to write SQL queries to insert, delete data from database, but also how to write custom queries to search through database, search my database by a certain area and that this displayed in a proper way to your recycler view. 
+I also used a clean architecture in my project and organized project structure and maintain and good code readability. I used also custom binding adapter and implement swipe to delete function to my recycler view.

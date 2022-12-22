@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="args"
+            type="com.nureddinelmas.todoapp_highlevel.data.models.ToDoData" />
+        <variable
+            name="spinner"
+            type="com.nureddinelmas.todoapp_highlevel.fragments.BindingAdapters" />
+    </data>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+
+    tools:context=".fragments.update.UpdateFragment">
+
+
+    <EditText
+        android:id="@+id/title_update"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:text="@{args.title}"
+        android:hint="@string/title"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/custom_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_update"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_layout"
+        android:entries="@array/priorities"
+        android:parsePriorityToInt="@{args.priority}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_update" />
+
+    <EditText
+        android:id="@+id/description_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_layout"
+        android:ems="10"
+        android:gravity="top|start"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@{args.description}"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/checkbox_update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_update"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkbox_update"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:checkMark="@drawable/ic_check_box"
+        android:checked="@{args.isDone}"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:text="is Done"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_update" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</layout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ajandam</string>
+    <string name="description">Açıklama</string>
+    <string name="title">Başlık</string>
+    <string name="search">Arama</string>
+    <string name="priority_high">Yüksek Öncelikli</string>
+    <string name="sort_by">Sırala</string>
+    <string name="priority_low">Düşük Öncelikli</string>
+    <string name="delete_all">Tümünü Sil</string>
+    <string name="add">Ekle</string>
+    <string name="delete">Sil</string>
+    <string name="save">Kaydet</string>
+    <string name="no_data">Yapılacak Listem Boş</string>
+    <string name="todolist">Yapılacaklar Listem</string>
+    <string name="updatelist">Güncelle</string>
+    <string name="addlist">Yeni Ekle</string>
+    <string name="removeWarning">Bu ögeyi kaldırmak istediğine emin misin</string>
+    <string name="isDone">Tamamlandı</string>
+    <string name="is_done">Tamamlandı</string>
+    <string name="is_not_done">Tamamlanmadı</string>
+    <string name="list">Liste Şekli</string>
+    <string name="linear">Linear</string>
+    <string name="grid">Grid</string>
+
+    <string-array name="priorities">
+        <item>Yüksek Öncelikli</item>
+        <item>Orta Öncelikli</item>
+        <item>Düşük Öncelikli</item>
+    </string-array>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item 
+    android:title="@string/search"
+    android:icon="@drawable/ic_search"
+    android:iconTint="@color/white"
+    app:showAsAction="ifRoom"
+    android:id="@+id/menu_search"
+    app:actionViewClass="androidx.appcompat.widget.SearchView">
+
+</item>
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/sort_by"
+            android:id="@+id/menu_sortBy">
+            <menu>
+                <item android:title="@string/priority_high" android:id="@+id/menu_priority_high"/>
+                <item android:title="@string/priority_low" android:id="@+id/menu_priority_low" />
+                <item android:title="@string/is_done" android:id="@+id/menu_by_isDone_true"/>
+                <item android:title="@string/is_not_done" android:id="@+id/menu_by_isDone_false"/>
+
+
+            </menu>
+
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/list"
+            android:id="@+id/menu_by_list">
+            <menu>
+                <item android:title="@string/linear" android:id="@+id/menu_linear_list"/>
+                <item android:title="@string/grid" android:id="@+id/menu_grid_list"/>
+            </menu>
+        </item>
+    </group>
+
+
+    <item android:title="@string/delete_all"
+        android:id="@+id/menu_delete_all"
+        app:showAsAction="never">
+
+    </item>
+</menu>
